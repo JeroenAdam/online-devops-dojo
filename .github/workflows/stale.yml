@@ -13,13 +13,13 @@ jobs:
         uses: actions/stale@v3
         id: stale
         with:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          DAYS_BEFORE_STALE: 14
-          DAYS_BEFORE_CLOSE: 7
-          STALE_ISSUE_LABEL: ':zzz: Stale?'
-          STALE_PR_LABEL: ':zzz: Stale?'
-          OPERATIONS_PER_RUN: 30
-          STALE_ISSUE_MESSAGE: 'This issue has been automatically marked as stale because it has not had recent activity. It will be closed in seven days if no further activity occurs.'
-          EXEMPT_ISSUE_LABELS: |
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
+          days-before-stale: 14
+          days-before-close: 7
+          stale-issue-label: ':zzz: Stale?'
+          stale-pr-label: ':zzz: Stale?'
+          operations-per-run: 30
+          stale-issue-message: 'This issue has been automatically marked as stale because it has not had recent activity. It will be closed in seven days if no further activity occurs.'
+          exempt-issue-labels: |
             ':pushpin: Pinned'
-            
+
